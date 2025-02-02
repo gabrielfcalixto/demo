@@ -10,9 +10,6 @@ public class UsuarioDTO {
     public UsuarioDTO(){
         //construtor vazio
     }
-    
-    
-
     // Getters and Setters
     public Long getId() {
         return id;
