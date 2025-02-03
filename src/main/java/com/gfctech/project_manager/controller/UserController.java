@@ -16,33 +16,33 @@ import com.gfctech.project_manager.service.UsuarioService;
 @RestController
 @RequestMapping(value = "/usuario")
 @CrossOrigin(origins = "http://localhost:4000")
-public class UsuarioController
+public class UserController
  {
     @Autowired
-    private UsuarioService usuarioService;
+    private UserService userService;
 
     @GetMapping
     public List<UsuarioDTO>ListarTodos()
     {
-        return usuarioService.listarTodos();
+        return userService.listarTodos();
     }
 
     @PostMapping
     public void inserir(@RequestBody UsuarioDTO usuario)
     {
-        usuarioService.inserir(usuario);
+        userService.inserir(usuario);
     }
 
     @PutMapping
     public void alterar(@RequestBody UsuarioDTO usuario)
     {
-        return usuarioService.alterar(usuario);
+        return userService.alterar(usuario);
     }
     
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> excluir(@PathVariable Long id)
     {
-        usuarioService.excluir(id);
+        userService.excluir(id);
         return ResponseEntity.noContent().build();
     }
 
