@@ -1,5 +1,4 @@
 package com.gfctech.project_manager.entity;
-
 import com.gfctech.project_manager.dto.UserDTO;
 import jakarta.persistence.*;
 import lombok.*;
