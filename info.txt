@@ -1,0 +1,26 @@
+Configuração (config/)
+
+AppConfig.java → Configuração geral do projeto.
+CorsConfig.java → Permite requisições externas ao backend.
+SwaggerConfig.java → Configura documentação automática da API com Swagger.
+Exceções (exception/)
+
+CustomException.java → Para definir exceções personalizadas.
+GlobalExceptionHandler.java → Captura exceções de toda a aplicação.
+Autenticação e Segurança (security/)
+
+jwt/JwtUtil.java → Gera e valida tokens JWT.
+jwt/JwtFilter.java → Filtra requisições e verifica tokens JWT.
+WebSecurityConfig.java → Define regras de segurança da aplicação.
+UserDetailsServiceImpl.java → Implementa UserDetailsService para carregar usuários.
+Controle de Acesso (entity/, repository/, service/)
+
+RoleEntity.java → Representa os papéis dos usuários.
+RoleRepository.java → Manipula os papéis no banco.
+RoleService.java → Gerencia regras de usuários.
+Autenticação (controller/AuthController.java)
+
+Controller responsável pelo login e registro de usuários.
+Testes (test/)
+
+Testes unitários para serviços e repositórios.
